@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lono-ui';
+  navToggled = false;
+
+  ToggleNav(){
+    this.navToggled = !this.navToggled;
+  }
 }
