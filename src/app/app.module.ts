@@ -26,6 +26,10 @@ import { MatMenuModule } from '@angular/material/menu';
     AuthModule.forRoot({
       domain: 'lono.us.auth0.com',
       clientId: 'nJ86rPDUSQQCbVRqmlGWyyXtC2YZEnfX',
+      redirect_uri: window.location.origin,
+      useRefreshTokens: true,
+      cacheLocation: "localstorage",
+      audience: 'lono-api'
     }),
     AppRoutingModule,
     BrowserAnimationsModule,
