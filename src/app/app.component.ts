@@ -10,6 +10,7 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public AppName = "Lono";
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches),
